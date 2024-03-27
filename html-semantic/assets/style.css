@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Main content */
+.main-content {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  width: 50%;
+}
+
+/* Aside */
+aside {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+tr:hover {background-color: aquamarine;}
+
+th {
+  font-weight: bold;
+}
+
+/* Form */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #222;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* CSS untuk tampilan mobile */
+@media only screen and (max-width: 600px) {
+  /* Header */
+  h1 {
+    font-size: 20px;
+  }
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  /* Main content */
+  figure {
+    flex-direction: column;
+  }
+
+  /* Form */
+  input[type="email"] {
+    width: calc(100% - 22px);
+    /* 22px = 2*5px padding + 2*1px border */
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}

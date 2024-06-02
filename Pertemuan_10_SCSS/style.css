@@ -1,3 +1,4 @@
+/* Variabel untuk warna */
 * {
   margin: 0;
   padding: 0;
@@ -5,48 +6,57 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: #007bff;
+  color: white;
   padding: 20px;
 }
 
-header h1 {
+h1 {
   text-align: center;
 }
 
-header nav {
-  text-align: center;
-}
-
-header nav ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-header nav li {
-  display: inline-block;
+nav li {
   margin: 0 10px;
 }
 
-header nav a {
+nav a {
+  color: white;
   text-decoration: none;
-  color: #333;
 }
 
 main {
   padding: 20px;
 }
 
-main section {
-  margin-bottom: 20px;
+section {
+  background-color: white;
+  padding: 20px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+p {
+  color: #6c757d;
 }
 
 footer {
-  background-color: #f0f0f0;
+  background-color: #6c757d;
+  color: white;
   text-align: center;
   padding: 10px;
 }/*# sourceMappingURL=style.css.map */

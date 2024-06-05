@@ -1,71 +1,79 @@
-/* Variabel untuk warna */
+// Variabel untuk warna
 $primary-color: #007bff; // Biru utama
 $secondary-color: #6c757d; // Abu-abu gelap
 $light-grey: #f8f9fa; // Abu-abu muda
 
+// Common styles to extend
+%centered {
+  text-align: center;
+}
 
+// Reset styles
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+// Base styles
 body {
   font-family: sans-serif;
   background-color: $light-grey;
 }
 
-
+// Header styles with nesting and extending
 header {
+  @extend %centered;
   background-color: $primary-color;
   color: white;
   padding: 20px;
+
+  h1 {
+    @extend %centered;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
-h1 {
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-
+// Main content styles with nesting
 main {
   padding: 20px;
+
+  section {
+    background-color: white;
+    padding: 20px;
+
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $secondary-color;
+    }
+  }
 }
 
-section {
-  background-color: white;
-  padding: 20px;
-}
-
-h2 {
-  color: $primary-color;
-}
-
-p {
-  color: $secondary-color;
-}
-
-
+// Footer styles with nesting
 footer {
   background-color: $secondary-color;
   color: white;
-  text-align: center;
+  @extend %centered;
   padding: 10px;
 }

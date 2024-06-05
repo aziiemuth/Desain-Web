@@ -1,0 +1,35 @@
+// Variabel
+$box-size: 120px;
+$initial-bg-color: blue;
+$mid-bg-color: green;
+$final-bg-color: red;
+$animation-duration: 5s;
+$transition-duration: 5s;
+$hover-scale: 1.5;
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translate(0, 0) rotate(0);
+    background-color: $initial-bg-color;
+  }
+  50% {
+    transform: translate(100px, 100px) rotate(180deg);
+    background-color: $mid-bg-color;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+    background-color: $final-bg-color;
+  }
+}
+
+.box {
+  width: $box-size;
+  height: $box-size;
+  background-color: $initial-bg-color;
+  animation: moveAndRotate $animation-duration infinite;
+  transition: transform $transition-duration ease;
+
+  &:hover {
+    transform: scale($hover-scale);
+  }
+}

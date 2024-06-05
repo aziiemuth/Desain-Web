@@ -1,4 +1,7 @@
-/* Variabel untuk warna */
+footer, header h1, header {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,24 +18,17 @@ header {
   color: white;
   padding: 20px;
 }
-
-h1 {
-  text-align: center;
-}
-
-nav ul {
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-
-nav li {
+header nav ul li {
   margin: 0 10px;
 }
-
-nav a {
+header nav ul li a {
   color: white;
   text-decoration: none;
 }
@@ -40,23 +36,19 @@ nav a {
 main {
   padding: 20px;
 }
-
-section {
+main section {
   background-color: white;
   padding: 20px;
 }
-
-h2 {
+main section h2 {
   color: #007bff;
 }
-
-p {
+main section p {
   color: #6c757d;
 }
 
 footer {
   background-color: #6c757d;
   color: white;
-  text-align: center;
   padding: 10px;
 }/*# sourceMappingURL=style.css.map */

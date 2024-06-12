@@ -1,0 +1,131 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* Kotak */
+.kotak {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Mengapung dan Pemosisian */
+.float-kiri {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.float-kanan {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Pemosisian */
+.posisi-relatif {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+.posisi-absolut {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 10px;
+    background-color: #ffe0b2;
+    border-radius: 5px;
+}
+
+.posisi-tetap {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #ff7043;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Tata Letak Tetap vs Cair */
+.tata-letak-tetap, .tata-letak-cair {
+    margin-bottom: 20px;
+}
+
+.tata-letak-tetap .kotak {
+    width: 600px; /* Lebar tetap */
+    margin: 20px auto;
+}
+
+.tata-letak-cair .kotak {
+    width: 90%; /* Lebar cair */
+    max-width: 100%;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .float-kiri, .float-kanan {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .posisi-absolut, .posisi-tetap {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}

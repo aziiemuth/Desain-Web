@@ -1,0 +1,12 @@
+body {
+    background-color: #f8f9fa;
+}
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
